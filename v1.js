@@ -1,6 +1,6 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
-const url = 'mongodb+srv://eagl:indra1234@cluster0-o0cyu.mongodb.net/test'; // Connection URL
+const url = 'mongodb://eagl:indra1234@cluster0-shard-00-00.igotq.mongodb.net:27017,cluster0-shard-00-01.igotq.mongodb.net:27017,cluster0-shard-00-02.igotq.mongodb.net:27017/test?replicaSet=atlas-wawlsh-shard-0&ssl=true&authSource=admin'; // Connection URL
 const dbName = 'newDB'; // Database Name
 
 MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, client) { // Use connect method to connect to the server
